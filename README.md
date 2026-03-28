@@ -1,37 +1,30 @@
-## Java Login App ##
-Testing 
+# Java Login Application with Docker & MySQL
 
-## Sample Java Login application uses "UserDB" database and Table schema to store the Employee Login details. ##
+[![Java](https://img.shields.io/badge/Java-11-blue.svg)](https://openjdk.java.net/projects/jdk/11/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.7-brightgreen)](https://spring.io/projects/spring-boot)
+[![MySQL](https://img.shields.io/badge/MySQL-8.0-orange)](https://www.mysql.com/)
+[![Docker](https://img.shields.io/badge/Docker-20.10-blue)](https://www.docker.com/)
 
-## How to see list of Databases ##
-SHOW DATABASES;
+A simple user authentication system built with **Spring Boot** and **MySQL**, fully containerized with **Docker Compose**. This project demonstrates how to package a Java web application and a database into separate containers that work together seamlessly.
 
-## How to create Database ##
+## 🚀 Features
 
-CREATE DATABASE UserDB;
+- User registration and login
+- JSP-based frontend
+- MySQL database integration
+- Dockerized setup for easy deployment
+- Environment variable configuration for credentials
+- Ready to deploy to AWS with Terraform (infrastructure scripts included)
 
-## How to list Tables ##
+## 📋 Prerequisites
 
-USE UserDB;
+- Docker & Docker Compose
+- Git (for cloning)
+- (Optional) Java 11 and Maven for local development
 
-SHOW TABLES;
+## 🛠️ Getting Started
 
-## How to create Table ##
-## Below Query to create require TABLE schema to store Employee records ##
-
-CREATE TABLE Employee (
-  id int unsigned auto_increment not null,
-  first_name varchar(250),
-  last_name varchar(250),
-  email varchar(250),
-  username varchar(250),
-  password varchar(250),
-  regdate timestamp,
-  primary key (id)
-);
-
-## List Table data ##
-SELECT * FROM Employee;
-
-## Describe Table schema ##
-DESCRIBE Employee;
+### 1. Clone the repository
+```bash
+git clone https://github.com/razwanislamrifat-source/DevOps-Project-01-Java-Login-App.git
+cd DevOps-Project-01-Java-Login-App
